@@ -4,28 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-translate="portfolio-title">Mi Portafolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo" data-translate="logo">Olivia Luciano</div>
-      <button onclick="toggleLanguage()">Toggle Language</button>
+      <div class="logo">Olivia Luciano</div>
+      <!-- <button onclick="toggleLanguage()">Toggle Language</button> -->
+
       <div>
         <ul class="nav-links">
-          <li><a href="#about" data-translate="about">Sobre mí</a></li>
-          <li>
-            <a href="#experience" data-translate="experience">Experiencia</a>
-          </li>
-          <li><a href="#education" data-translate="education">Educación</a></li>
-          <li><a href="#projects" data-translate="projects">Proyectos</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#experience">Educación</a></li>
+          <li><a href="#projects">Proyectos</a></li>
           <li><a href="#contact" data-translate="contact">Contacto</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo" data-translate="logo">Olivia Luciano</div>
+      <div class="logo">Olivia Luciano</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -33,36 +32,12 @@
           <span></span>
         </div>
         <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre mí</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Educación</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
           <li>
-            <a href="#about" onclick="toggleMenu()" data-translate="about"
-              >Sobre mí</a
-            >
-          </li>
-          <li>
-            <a
-              href="#experience"
-              onclick="toggleMenu()"
-              data-translate="experience"
-              >Experiencia</a
-            >
-          </li>
-          <li>
-            <a
-              href="#education"
-              onclick="toggleMenu()"
-              data-translate="education"
-              >Educación</a
-            >
-          </li>
-          <li>
-            <a href="#projects" onclick="toggleMenu()" data-translate="projects"
-              >Proyectos</a
-            >
-          </li>
-          <li>
-            <a href="#contact" onclick="toggleMenu()" data-translate="contact"
-              >Contacto</a
-            >
+            <a href="#contact" onclick="toggleMenu()">Contacto</a>
           </li>
         </div>
       </div>
@@ -75,9 +50,9 @@
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1" data-translate="hello">Hola, soy</p>
-        <h1 class="title" data-translate="name">Olivia Luciano</h1>
-        <p class="section__text__p2" data-translate="role">
+        <p class="section__text__p1">Hola, soy</p>
+        <h1 class="title">Olivia Luciano</h1>
+        <p class="section__text__p2">
           Desarrolladora Web Full-stack <br />
           Salesforce Admin
         </p>
@@ -86,15 +61,10 @@
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/cv_olivia_luciano.pdf')"
-            data-translate="download-cv"
           >
             Descargar CV
           </button>
-          <button
-            class="btn btn-color-1"
-            onclick="location.href='./#contact'"
-            data-translate="contact-info"
-          >
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Info de Contacto
           </button>
         </div>
@@ -114,9 +84,10 @@
         </div>
       </div>
     </section>
-
+    <br>
+    <br>
     <section id="about">
-      <h1 class="title" data-translate="about-title">Sobre mí</h1>
+      <h1 class="title">Sobre mí</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
@@ -133,10 +104,8 @@
                 alt="Experience icon"
                 class="icon"
               />
-              <h3 data-translate="experience">Experiencia</h3>
-              <p data-translate="experience-details">
-                3 meses <br />Administradora de Salesforce
-              </p>
+              <h3>Experiencia</h3>
+              <p>3 meses <br />Administradora de Salesforce</p>
             </div>
             <div class="details-container">
               <img
@@ -144,13 +113,11 @@
                 alt="Education icon"
                 class="icon"
               />
-              <h3 data-translate="education">Educación</h3>
-              <p data-translate="education-details">
-                Tecnicatura Universitaria en Programación
-              </p>
+              <h3>Educación</h3>
+              <p>Tecnicatura Universitaria en Programación</p>
             </div>
           </div>
-          <div class="text-container" data-translate="about-description">
+          <div class="text-container">
             <p>
               Hola, soy Oli, estudiante avanzada (60%) de la Tecnicatura
               Universitaria en Programación y Administradora de Salesforce.
@@ -169,115 +136,92 @@
         onclick="location.href='./#experience'"
       />
     </section>
-
     <section id="experience">
-      <h1 class="title" data-translate="experience-title">
-        Experiencia Laboral
-      </h1>
+      <h1 class="title">Experiencia Laboral</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <h2 class="experience-sub-title" data-translate="job-place">
-            Avalian Salud
-          </h2>
-          <div class="text-container" data-translate="job-details">
+          <h2 class="experience-sub-title">Avalian Salud</h2>
+          <div class="text-container">
             <p>
               Adm. Desarrollo de Sistemas <br />
               Agosto 2023 - Actualidad
             </p>
           </div>
-          <div class="text-container" data-translate="job-description">
+          <div class="text-container">
             <p>
               Estoy realizando pasantía como administradora de Salesforce.
-              Acompaño y colaboro en la implementación del sistema. Realizo
-              relevamientos de requerimientos. Analizo la información relevada y
-              planteo soluciones de desarrollo. Realizo testeos manuales.
-              Analizo sobre el impacto de las actualizaciones de versiones de
-              Salesforce en la organización. Manejo metadata de Salesforce.
-              Utilizo dataloader para manejo masivo de datos.
+              Acompaño y colaboro en la implementación del sistema.
+Realizo relevamientos de requerimientos. Analizo la información
+relevada y planteo soluciones de desarrollo. Realizo testeos
+manuales. Analizo sobre el impacto de las actualizaciones de
+versiones de Salesforce en la organización. Manejo metadata de
+Salesforce. Utilizo dataloader para manejo masivo de datos.
+
             </p>
           </div>
         </div>
       </div>
-      <section id="education">
-        <h1 class="title" data-translate="education-title">Educación</h1>
+      <section id="experience">
+        <h1 class="title">Educación</h1>
         <div class="experience-details-container">
           <div class="about-containers">
             <div class="text-container">
-              <p data-translate="university-info">
-                Universidad Austral <br />
+              <p >Universidad Austral <br>
                 Tecnicatura Universitaria en Programación <br />
                 Marzo 2022 - Actualidad
               </p>
             </div>
             <div class="text-container">
-              <p data-translate="school-info">
-                Colegio San Bartolomé - colegio bilingüe (doble escolaridad)<br />
-                Bachiller en ciencias sociales<br />
-                2016 - 2020
-              </p>
-            </div>
-            <div class="text-container" data-translate="salesforce-cohort-info">
-              <p>
-                Salesforce Talent Alliance Career Cohorts - Salesforce y
-                Deloitte latam<br />
-                Salesforce Administrator <br />
-                Abril 2023 - Agosto 2023
-              </p>
-            </div>
+                <p >Colegio San Bartolomé - colegio bilingüe (doble escolaridad)<br>
+                  Bachiller en ciencias sociales<br />
+                  2016 - 2020
+                </p>
+              </div>
+              <div class="text-container">
+                <p >Salesforce Talent Alliance Career Cohorts - Salesforce y Deloitte latam<br>
+                  Salesforce Administrator <br />
+                  Abril 2023 - Agosto 2023
+                </p>
+              </div>
 
+              <div class="experience-details-container">
+                <div class="about-containers">
+              <h3 class="sub-title">Certificaciones</h3>
+              <div class="text-container">
+                <p >Salesforce Associate Certification <br>
+                  Salesforce - Junio 2023</p>
+              </div>
+              <div class="text-container">
+                <p >First Certificate in English <br>
+                  Cambridge - Diciembre 2018</p>
+              </div>
+              </div>
+              </div>
+
+            
+          
+
+  
             <div class="experience-details-container">
               <div class="about-containers">
-                <h3 class="sub-title" data-translate="certifications-title">
-                  Certificaciones
-                </h3>
-                <div
-                  class="text-container"
-                  data-translate="salesforce-certification-info"
-                >
-                  <p>
-                    Salesforce Associate Certification <br />
-                    Salesforce - Junio 2023
-                  </p>
-                </div>
-                <div
-                  class="text-container"
-                  data-translate="english-certification-info"
-                >
-                  <p>
-                    First Certificate in English <br />
-                    Cambridge - Diciembre 2018
-                  </p>
-                </div>
+
+              <h3 class="sub-title">Habilidades</h3>
+              <div class="text-container">
+                    <p >• Python | .NET Core (C#) | Spring Boot (Java) | API REST</p>
+                    <p >• Angular (ts) | React (js) | Javascript | Typescript | HTML | CSS</p>
+                    <p >• Diseño de bases de datos relacionales | SQL</p>
+                    <p >• Linux (Ubuntu) | Bash | Docker</p>
+                    <p >• Git | Github | Bitbucket | Sourcetree</p>
+                    <p >• Metodologías ágiles (Scrum y Kanban) | Jira</p>
+                    <p >• Salesforce</p>
               </div>
+
             </div>
 
-            <div class="experience-details-container">
-              <div class="about-containers">
-                <h3 class="sub-title" data-translate="skills-title">
-                  Habilidades
-                </h3>
-                <div class="text-container" data-translate="skills-info">
-                  <p>
-                    • Python | .NET Core (C#) | Spring Boot (Java) | API REST
-                  </p>
-                  <p>
-                    • Angular (ts) | React (js) | Javascript | Typescript | HTML
-                    | CSS
-                  </p>
-                  <p>• Diseño de bases de datos relacionales | SQL</p>
-                  <p>• Linux (Ubuntu) | Bash | Docker</p>
-                  <p>• Git | Github | Bitbucket | Sourcetree</p>
-                  <p>• Metodologías ágiles (Scrum y Kanban) | Jira</p>
-                  <p>• Salesforce</p>
-                </div>
               </div>
             </div>
-          </div>
         </div>
-      </section>
-    </section>
-
-    <!-- <img
+      <!-- <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
