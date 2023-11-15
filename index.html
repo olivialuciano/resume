@@ -27,7 +27,7 @@
 
     <!-- PHONE -->
     <nav id="hamburger-nav">
-      <button onclick="toggleLanguage()">EN/ES</button>
+      <button class="toggle-button" onclick="toggleLanguage()" data-translate="enes"></button>
 
       <div class="hamburger-menu">
         
@@ -38,10 +38,10 @@
         </div>
         
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()" data-translate="aboutMe">{translations.aboutMe}</a></li>
-          <li><a href="#experience" onclick="toggleMenu()" data-translate="experience">{translations.experience}</a></li>
-          <li><a href="#education" onclick="toggleMenu()" data-translate="education">{translations.education}</a></li>
-          <li><a href="#contact" onclick="toggleMenu()" data-translate="contact">{translations.contact}</a></li>
+          <li><a href="#about" onclick="toggleMenu()" data-translate="aboutMe"></a></li>
+          <li><a href="#experience" onclick="toggleMenu()" data-translate="experience"></a></li>
+          <li><a href="#education" onclick="toggleMenu()" data-translate="education"></a></li>
+          <li><a href="#contact" onclick="toggleMenu()" data-translate="contact"></a></li>
         </div>
       </div>
     </nav>
@@ -82,9 +82,9 @@
           />
           <img
           src="./assets/trailhead.png"
-          alt="My Github profile"
+          alt="My trailblazer profile"
           class="icon"
-          onclick="location.href='https://www.salesforce.com/trailblazer/olivialuciano42"
+          onclick="location.href='https://www.salesforce.com/trailblazer/olivialuciano42'"
         />
         </div>
       </div>
@@ -111,7 +111,7 @@
     </section>
 
 
-      <section id="experience">
+      <section id="education">
         <h1 class="title" data-translate="education"></h1>
         <div class="experience-details-container">
           <div class="about-containers">
