@@ -8,64 +8,63 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Olivia Luciano</div>
-      <!-- <button onclick="toggleLanguage()">Toggle Language</button> -->
 
+  <body>
+    <!-- DESKTOP -->
+    <nav id="desktop-nav">
+      <button class="toggle-button" onclick="toggleLanguage()" data-translate="enes"></button>
+
+      
       <div>
         <ul class="nav-links">
-          <li><a href="#about">Sobre mí</a></li>
-          <li><a href="#experience">Experiencia</a></li>
-          <li><a href="#experience">Educación</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contact" data-translate="contact">Contacto</a></li>
+          <li><a href="#about" data-translate="aboutMe"></a></li>
+          <li><a href="#experience" data-translate="experience"></a></li>
+          <li><a href="#education" data-translate="education"></a></li>
+          <li><a href="#contact" data-translate="contact"></a></li>
         </ul>
       </div>
     </nav>
+
+    <!-- PHONE -->
     <nav id="hamburger-nav">
-      <div class="logo">Olivia Luciano</div>
+      <button onclick="toggleLanguage()">EN/ES</button>
+
       <div class="hamburger-menu">
+        
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
+        
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">Sobre mí</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Educación</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
-          <li>
-            <a href="#contact" onclick="toggleMenu()">Contacto</a>
-          </li>
+          <li><a href="#about" onclick="toggleMenu()" data-translate="aboutMe">{translations.aboutMe}</a></li>
+          <li><a href="#experience" onclick="toggleMenu()" data-translate="experience">{translations.experience}</a></li>
+          <li><a href="#education" onclick="toggleMenu()" data-translate="education">{translations.education}</a></li>
+          <li><a href="#contact" onclick="toggleMenu()" data-translate="contact">{translations.contact}</a></li>
         </div>
       </div>
     </nav>
+
     <section id="profile">
       <div class="section__pic-container">
         <img
           src="./assets/profile-pic.PNG"
-          alt="Olivia Luciano profile picture"
+          alt="{translations.logo} profile picture"
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hola, soy</p>
         <h1 class="title">Olivia Luciano</h1>
-        <p class="section__text__p2">
-          Desarrolladora Web Full-stack <br />
-          Salesforce Admin
-        </p>
+        <p class="section__text__p2" data-translate="desarrolladora">
+        </p><p class="section__text__p2">Salesforce Admin</p>
 
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/cv_olivia_luciano.pdf')"
+            onclick="window.open('./assets/cv_olivia_luciano.pdf')" data-translate="downloadCV"
           >
-            Descargar CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Info de Contacto
+          <button class="btn btn-color-1" onclick="location.href='./#contact'" data-translate="contactInfo">
           </button>
         </div>
         <div id="socials-container">
@@ -81,120 +80,85 @@
             class="icon"
             onclick="location.href='https://github.com/olivialuciano'"
           />
-        </div>
-      </div>
-    </section>
-    <br>
-    <br>
-    <section id="about">
-      <h1 class="title">Sobre mí</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
           <img
-            src="./assets/about-pic-bn.PNG"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experiencia</h3>
-              <p>3 meses <br />Administradora de Salesforce</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Educación</h3>
-              <p>Tecnicatura Universitaria en Programación</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hola, soy Oli, estudiante avanzada (60%) de la Tecnicatura
-              Universitaria en Programación y Administradora de Salesforce.
-              Tengo un nivel intermedio/avanzado de inglés (certificado B2
-              First). Soy responsable, organizada y colaborativa. Actualmente me
-              encuentro trabajando de pasante en el área de sistemas en Avalian
-              como administradora de Salesforce.
-            </p>
-          </div>
+          src="./assets/trailhead.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://www.salesforce.com/trailblazer/olivialuciano42"
+        />
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
-    <section id="experience">
-      <h1 class="title">Experiencia Laboral</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <h2 class="experience-sub-title">Avalian Salud</h2>
+    <section id="about">
+      <h1 class="title" data-translate="aboutMe"></h1>
           <div class="text-container">
-            <p>
-              Adm. Desarrollo de Sistemas <br />
-              Agosto 2023 - Actualidad
-            </p>
-          </div>
-          <div class="text-container">
-            <p>
-              Estoy realizando pasantía como administradora de Salesforce.
-              Acompaño y colaboro en la implementación del sistema.
-Realizo relevamientos de requerimientos. Analizo la información
-relevada y planteo soluciones de desarrollo. Realizo testeos
-manuales. Analizo sobre el impacto de las actualizaciones de
-versiones de Salesforce en la organización. Manejo metadata de
-Salesforce. Utilizo dataloader para manejo masivo de datos.
+            <p data-translate="aboutMe1"></p>
+            <p data-translate="aboutMe2"></p>
+            <p data-translate="aboutMe3"></p>
+            <p data-translate="aboutMe4"></p>
 
-            </p>
           </div>
-        </div>
+    </section>
+
+    <section id="experience">
+      <h1 class="title" data-translate="experience"></h1>
+      <div class="text-container">
+        <strong>Avalian Salud </strong>
+        <br>
+        <strong data-translate="experiencieAv"></strong>
+        <p data-translate="experience1"></p>
       </div>
+    </section>
+
+
       <section id="experience">
-        <h1 class="title">Educación</h1>
+        <h1 class="title" data-translate="education"></h1>
         <div class="experience-details-container">
           <div class="about-containers">
             <div class="text-container">
-              <p >Universidad Austral <br>
-                Tecnicatura Universitaria en Programación <br />
-                Marzo 2022 - Actualidad
-              </p>
+              <strong data-translate="university"></strong>
+              <p data-translate="title"></p>
+              <p data-translate="ausDate"></p>
             </div>
             <div class="text-container">
-                <p >Colegio San Bartolomé - colegio bilingüe (doble escolaridad)<br>
-                  Bachiller en ciencias sociales<br />
-                  2016 - 2020
-                </p>
-              </div>
+              <strong data-translate="school"></strong>
+              <p data-translate="bachelor"></p>
+              <p>2016 - 2020</p>
+            </div>
               <div class="text-container">
-                <p >Salesforce Talent Alliance Career Cohorts - Salesforce y Deloitte latam<br>
-                  Salesforce Administrator <br />
-                  Abril 2023 - Agosto 2023
-                </p>
+                <strong data-translate="deloitte"></strong>
+                <p >Salesforce Talent Alliance Career Cohorts<br>
+                  Salesforce Administrator </p>
+                  <p data-translate="deloDate"></p>
+
               </div>
 
               <div class="experience-details-container">
                 <div class="about-containers">
-              <h3 class="sub-title">Certificaciones</h3>
-              <div class="text-container">
-                <p >Salesforce Associate Certification <br>
-                  Salesforce - Junio 2023</p>
+              <h1 class="sub-title" data-translate="certifications"></h1>
+              <div class="about-containers">
+                <div class="details-container">
+                  <img
+                    src="./assets/experience.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <strong>Salesforce Associate Certification</strong>
+                  <p data-translate="salesforce"></p>
+
+                </div>
+                <div class="details-container">
+                  <img
+                    src="./assets/experience.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <strong>First Certificate in English</strong>
+                  <p data-translate="cambridge"></p>
+                </div>
+
               </div>
-              <div class="text-container">
-                <p >First Certificate in English <br>
-                  Cambridge - Diciembre 2018</p>
-              </div>
+             
               </div>
               </div>
 
@@ -205,14 +169,20 @@ Salesforce. Utilizo dataloader para manejo masivo de datos.
             <div class="experience-details-container">
               <div class="about-containers">
 
-              <h3 class="sub-title">Habilidades</h3>
+              <h1 class="sub-title" data-translate="skills"></h1>
               <div class="text-container">
+                <strong>Back end</strong>
                     <p >• Python | .NET Core (C#) | Spring Boot (Java) | API REST</p>
+                    <strong>Front end</strong>
                     <p >• Angular (ts) | React (js) | Javascript | Typescript | HTML | CSS</p>
-                    <p >• Diseño de bases de datos relacionales | SQL</p>
-                    <p >• Linux (Ubuntu) | Bash | Docker</p>
+                    <strong data-translate="databases"></strong>
+                    <p data-translate="bdd" > </p>
+                    <strong data-translate="versionControl"></strong>
                     <p >• Git | Github | Bitbucket | Sourcetree</p>
-                    <p >• Metodologías ágiles (Scrum y Kanban) | Jira</p>
+                    <strong data-translate="projectManagement"></strong>
+                    <p data-translate="agile"></p>
+                    <strong data-translate="other"></strong>
+                    <p >• Linux (Ubuntu) | Bash | Docker</p>
                     <p >• Salesforce</p>
               </div>
 
@@ -318,7 +288,7 @@ Salesforce. Utilizo dataloader para manejo masivo de datos.
       />
     </section> -->
     <section id="contact">
-      <h1 class="title">Contactame</h1>
+      <h1 class="title" data-translate="contactMe"></h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -344,29 +314,19 @@ Salesforce. Utilizo dataloader para manejo masivo de datos.
             >
           </p>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/trailhead.png"
-            alt="Trailhead icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.salesforce.com/trailblazer/olivialuciano42"
-              >Olivia Luciano</a
-            >
-          </p>
+        
         </div>
       </div>
     </section>
     <footer>
       <nav>
         <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#experience">Educación</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact" data-translate="contact">Contacto</a></li>
+          <ul class="nav-links2">
+            <li><a href="#about" data-translate="aboutMe"></a></li>
+            <li><a href="#experience" data-translate="experience"></a></li>
+            <li><a href="#experience" data-translate="education"></a></li>
+            <!-- <li><a href="#projects">Proyectos</a></li> -->
+            <li><a href="#contact" data-translate="contact"></a></li>
           </ul>
         </div>
       </nav>

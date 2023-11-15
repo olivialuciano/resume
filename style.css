@@ -66,6 +66,20 @@ a:hover {
   cursor: default;
 }
 
+/* togglebutton */
+.toggle-button {
+  display: inline-block;
+  padding: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #313131;
+  border: 1px, #313131;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -150,7 +164,6 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -166,7 +179,6 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
 }
 
 .section__pic-container {
@@ -413,10 +425,6 @@ article .icon {
   margin: 1rem;
 }
 
-.contact-info-container p {
-  font-size: larger;
-}
-
 .contact-icon {
   cursor: default;
 }
@@ -430,8 +438,19 @@ article .icon {
 footer {
   height: 26vh;
   margin: 0 1rem;
+  font-size: 20%;
 }
 
 footer p {
   text-align: center;
+}
+
+.nav-links2 {
+  display: flex;
+}
+
+.nav-links2 {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1rem;
 }

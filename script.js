@@ -7,103 +7,97 @@ function toggleMenu() {
 
 const translations = {
   en: {
+    enes: "ES",
     portfolioTitle: "My Portfolio",
-    logo: "Olivia Luciano",
-    about: "About",
+    toggleLanguage: "Toggle Language",
+    desarrolladora: "Full-stack Web Developer",
+    aboutMe: "About Me",
+    aboutMe1:
+      "Hello! My name is Olivia, I'm 20 years old, and I'm from Argentina.",
+    aboutMe2:
+      "Currently, I am an advanced student in the University Technician Program in Programming at Universidad Austral and work as a Salesforce Administrator. ",
+    aboutMe3:
+      "My native language is Spanish. I have an intermediate/advanced level of English, enabling me to communicate both in writing and orally with people from around the world. ",
+    aboutMe4:
+      "I am characterized by being a responsible, organized, and collaborative individual. Currently, I am part of Avalian as an intern in the systems department, where I serve as a Salesforce Administrator.",
     experience: "Experience",
+    experiencieAv: "Systems Development. August 2023 - Present.",
+    experience1:
+      "I am doing an internship as a Salesforce administrator, supporting and collaborating in the system implementation. I conduct requirements surveys, analyze the gathered information, and propose development solutions. I perform manual testing and analyze the impact of Salesforce version updates on the organization. I handle Salesforce metadata and use Dataloader for bulk data management.",
     education: "Education",
-    projects: "Projects",
     contact: "Contact",
-    hello: "Hello, I'm",
-    name: "Olivia Luciano",
-    role: "Full-stack Web Developer <br /> Salesforce Admin",
-    downloadCv: "Download CV",
+    downloadCV: "Download CV",
     contactInfo: "Contact Info",
-    linkedinProfile: "https://linkedin.com/in/olivialuciano",
-    githubProfile: "https://github.com/olivialuciano",
-    aboutTitle: "About Me",
-    aboutDescription:
-      "Hi, I'm Oli, an advanced student (60%) in the University Degree in Programming and Salesforce Administrator. I have an intermediate/advanced level of English (B2 First certified). I am responsible, organized, and collaborative. Currently, I am working as an intern in the systems area at Avalian as a Salesforce administrator.",
-    experienceTitle: "Work Experience",
-    jobDetails:
-      "I am doing an internship as a Salesforce administrator. I accompany and collaborate in the implementation of the system. I conduct requirements surveys. I analyze the collected information and propose development solutions. I perform manual testing. I analyze the impact of Salesforce version updates on the organization. I handle Salesforce metadata. I use Dataloader for bulk data handling.",
-    educationTitle: "Education",
-    educationDetails:
-      "University Austral <br> University Degree in Programming <br /> March 2022 - Present",
-    highSchoolDetails:
-      "San Bartolomé School - bilingual school (double shift) <br> Bachelor in Social Sciences <br /> 2016 - 2020",
-    salesforceCertificationDetails:
-      "Salesforce Talent Alliance Career Cohorts - Salesforce and Deloitte latam <br> Salesforce Administrator <br /> April 2023 - August 2023",
-    certificationsTitle: "Certifications",
-    salesforceCertification:
-      "Salesforce Associate Certification <br> Salesforce - June 2023",
-    englishCertification:
-      "First Certificate in English <br> Cambridge - December 2018",
-    skillsTitle: "Skills",
-    pythonSkills: "• Python | .NET Core (C#) | Spring Boot (Java) | REST API",
-    webSkills:
-      "• Angular (ts) | React (js) | Javascript | Typescript | HTML | CSS",
-    databaseSkills: "• Relational database design | SQL",
-    devOpsSkills: "• Linux (Ubuntu) | Bash | Docker",
-    versionControlSkills: "• Git | Github | Bitbucket | Sourcetree",
-    agileSkills: "• Agile methodologies (Scrum and Kanban) | Jira",
-    salesforceSkills: "• Salesforce",
+    certifications: "Certifications",
+    skills: "Skills",
+    databases: "Databases",
+    versionControl: "Version Control",
+    projectManagement: "Project Management",
+    other: "Other",
+    university: "Austral University",
+    title: "University Technician in Programming",
+    ausDate: "March 2022 - Present",
+    school: "San Bartolomé School - Bilingual School (double shift)",
+    bachelor: "Bachelor in Social Studies",
+    deloitte: "Salesforce and Deloitte LATAM",
+    deloDate: "April 2023 - August 2023",
+    salesforce: "Salesforce - June 2023",
+    cambridge: "Cambridge - December 2018",
+    contactMe: "Contact Me",
+    skills: "Skills",
+    agile: "• Agile Methodologies (Scrum and Kanban) | Jira",
+    bdd: "• Database Design for Relational Databases | SQL",
   },
   es: {
+    enes: "EN",
     portfolioTitle: "Mi Portafolio",
-    logo: "Olivia Luciano",
-    about: "Acerca de",
+    toggleLanguage: "Cambiar Idioma",
+    desarrolladora: "Desarrolladora Web Full-stack",
+    aboutMe: "Sobre mí",
+    aboutMe1: "¡Hola! Mi nombre es Olivia, tengo 20 años y soy de Argentina.",
+    aboutMe2:
+      "Actualmente, soy estudiante avanzada de la Tecnicatura Universitaria en Programación en la Universidad Austral, además de desempeñarme como Administradora de Salesforce.",
+    aboutMe3:
+      "Mi lengua nativa es el español. Poseo un nivel intermedio/avanzado en inglés, lo que me permite comunicarme tanto de manera escrita como oral con personas de todo el mundo.",
+    aboutMe4:
+      "Me destaco por ser una persona responsable, organizada y colaborativa. En la actualidad, formo parte de Avalian como pasante en el área de sistemas, donde ocupo el rol de administradora de Salesforce.  ",
     experience: "Experiencia",
+    experiencieAv: "Adm. Desarrollo de Sistemas. Agosto 2023 - Actualidad",
+    experience1:
+      "Estoy realizando pasantía como administradora de Salesforce acompañando y colaborando en la implementación del sistema. Realizo relevamientos de requerimientos, analizo la información relevada y planteo soluciones de desarrollo. Realizo testeos manuales. Analizo sobre el impacto de las actualizaciones de versiones de Salesforce en la organización. Manejo metadata de Salesforce. Utilizo dataloader para manejo masivo de datos.",
     education: "Educación",
-    projects: "Proyectos",
     contact: "Contacto",
-    hello: "Hola, soy",
-    name: "Olivia Luciano",
-    role: "Desarrolladora Web Full-stack Administradora de Salesforce",
-    downloadCv: "Descargar CV",
-    contactInfo: "Info de Contacto",
-    linkedinProfile: "https://linkedin.com/in/olivialuciano",
-    githubProfile: "https://github.com/olivialuciano",
-    aboutTitle: "Sobre mí",
-    aboutDescription:
-      "Hola, soy Oli, estudiante avanzada (60%) de la Tecnicatura Universitaria en Programación y Administradora de Salesforce. Tengo un nivel intermedio/avanzado de inglés (certificado B2 First). Soy responsable, organizada y colaborativa. Actualmente me encuentro trabajando de pasante en el área de sistemas en Avalian como administradora de Salesforce.",
-    experienceTitle: "Experiencia Laboral",
-    jobDetails:
-      "Estoy realizando pasantía como administradora de Salesforce. Acompaño y colaboro en la implementación del sistema. Realizo relevamientos de requerimientos. Analizo la información relevada y planteo soluciones de desarrollo. Realizo testeos manuales. Analizo sobre el impacto de las actualizaciones de versiones de Salesforce en la organización. Manejo metadata de Salesforce. Utilizo dataloader para manejo masivo de datos.",
-    educationTitle: "Educación",
-    educationDetails:
-      "Universidad Austral <br> Tecnicatura Universitaria en Programación <br /> Marzo 2022 - Actualidad",
-    highSchoolDetails:
-      "Colegio San Bartolomé - colegio bilingüe (doble escolaridad)<br> Bachiller en ciencias sociales<br /> 2016 - 2020",
-    salesforceCertificationDetails:
-      "Salesforce Talent Alliance Career Cohorts - Salesforce y Deloitte latam<br> Salesforce Administrator <br /> Abril 2023 - Agosto 2023",
-    certificationsTitle: "Certificaciones",
-    salesforceCertification:
-      "Salesforce Associate Certification <br> Salesforce - Junio 2023",
-    englishCertification:
-      "First Certificate in English <br> Cambridge - Diciembre 2018",
-    skillsTitle: "Habilidades",
-    pythonSkills: "• Python | .NET Core (C#) | Spring Boot (Java) | API REST",
-    webSkills:
-      "• Angular (ts) | React (js) | Javascript | Typescript | HTML | CSS",
-    databaseSkills: "• Diseño de bases de datos relacionales | SQL",
-    devOpsSkills: "• Linux (Ubuntu) | Bash | Docker",
-    versionControlSkills: "• Git | Github | Bitbucket | Sourcetree",
-    agileSkills: "• Metodologías ágiles (Scrum y Kanban) | Jira",
-    salesforceSkills: "• Salesforce",
+    downloadCV: "Descargar CV",
+    contactInfo: "Información de Contacto",
+    certifications: "Certificaciones",
+    skills: "Habilidades",
+    databases: "Bases de datos",
+    versionControl: "Controlador de versiones",
+    projectManagement: "Gestión de proyectos",
+    other: "Otros",
+    university: "Universidad Austral",
+    title: "Tecnicatura Universitaria en Programación",
+    ausDate: "Marzo 2022 - Actualidad",
+    school: "Colegio San Bartolomé - Colegio bilingüe (doble turno)",
+    bachelor: "Bachiller en ciencias sociales",
+    deloitte: "Salesforce y Deloitte LATAM",
+    deloDate: "Abril 2023 - Agosto 2023",
+    salesforce: "Salesforce - Junio 2023",
+    cambridge: "Cambridge - Diciembre 2018",
+    contactMe: "Contactame",
+    skills: "Habilidades",
+    agile: "• Metodologías ágiles (Scrum y Kanban) | Jira",
+    bdd: "• Diseño de bases de datos relacionales | SQL",
   },
 };
 
-let currentLanguage = "en"; // Inglés por defecto, puedes cambiar a 'es' para español
+let currentLanguage = "en";
 
 function toggleLanguage() {
-  // Cambiar entre 'en' (inglés) y 'es' (español)
   currentLanguage = currentLanguage === "en" ? "es" : "en";
 
-  // Obtener todos los elementos que tienen atributo 'data-translate'
   const elementsToTranslate = document.querySelectorAll("[data-translate]");
 
-  // Actualizar el texto de los elementos según el idioma actual
   elementsToTranslate.forEach((element) => {
     const key = element.getAttribute("data-translate");
     if (translations[currentLanguage][key]) {
@@ -112,5 +106,4 @@ function toggleLanguage() {
   });
 }
 
-// Llama a toggleLanguage al cargar la página para establecer el idioma inicial
 toggleLanguage();
